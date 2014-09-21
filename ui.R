@@ -27,7 +27,16 @@ shinyUI(fluidPage(
                     plotOutput("chart")                                         
                 ),
                 tabPanel("About",
-                    p("text")             
+                         p("This is simple app that plot stock charts."),
+                         h4("How to use:"),
+                         p("- Enter a company symbol, e.g. MSFT, GOOG, FB"),
+                         p("- Select a date range"),
+                         p("- Select a chart type"),
+                         p("- To add a moving average chose the checkbox and select a number of periods"),
+                         h4("Links:"),
+                         p("- ",a("GitHub", href="https://github.com/Slepov/courseproject_DDP")),
+                         p("- ",a("Presentation", href="http://slepov.github.io/SCApres/"))
+                         
                 )
                 
             )
